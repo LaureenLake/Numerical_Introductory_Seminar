@@ -18,7 +18,7 @@
 install.packages("deSolve")
 library(deSolve)
 
-explRK5_bedd4_adap <- function(f, t_interval, y0, h0=NA) {
+explRK5_bedd4_adap <- function(f, t_interval, y0, h0=NA, TOL) {
   
   # get boundaries of interval
   t0 <- t_interval[1]
